@@ -1,15 +1,15 @@
 # Implementing CAPTCHA Solver and Making Unsolvable CAPTCHAs
 In this project, we implemented a CAPTCHA Solver and evaded our solver model using adversarial CAPTCHA examples. A more detailed explanation of how we implemented our model and how we created adversarial examples can be found in great detail by looking at the project report. This file is going to explain how to run our project on your end.
-Getting Started
-Dependencies:
+## Getting Started
+### Dependencies:
 We implemented our program in the python language and we used jupyter notebook as our ide. We also used several libraries in python. We used torch, TensorFlow, torchvision, cv2, matplotlib.pyplot, PIL, pandas, time, os, json, skimage and numpy. To run our code, you must download these libraries on your machine. Since these libraries take up too much space we recommend running the code in Google Collaboratory. Google Collaboratory uses google's machines thus if you use Google Collaboratory you don't need to download libraries used in the code directly to your machine. We highly recommend using Google Collaboratory. After opening the file using Google Collaboratory, there is also no need to download jupyter notebook files.
-Installing files and using Google Collaboratory:
+### Installing files and using Google Collaboratory:
 The project consists of a file and a jupyter notebook file written in python language. If you are going to use Google Collaboratory to run the code, you should first upload the captcha-solver folder and captcha.ipynb jupyter notebook file to your google drive. After uploading the file and folder, you need to open the captcha.ipynb using Google Collaboratory. Simply right-click on the captcha.ipynb file and select open with Google Collaboratory. This will open the file in a new tab.
 If you are not using Google Collaboratory I advise you to put the captcha.ipynb file and captcha-solver folder under the same directory.
 Captcha-solver folder explanation:
 This folder contains the essential files to run the code and train the model. There is no need to change anything in this folder. We opened a subfolder named data which contains the training captchas, validation set, test set, and adversarial captchas we created. Adversarial CAPTCHAS are put under the data folder and every experiment has its folder. For example under captcha-solver/data/salt_save0.2 you can find adversarial CAPTCHAS created using salt and pepper noise with 0.2 noise. you can check the experiment results using this folder.
    
-Running the Code:
+### Running the Code:
 After opening the captcha.ipynb file using Google Collaboratory in a new tab you can start running each cell in the captcha.ipynb. The second cell imports the uploaded captcha-solver folder. It asks for permission since it is importing the folder from your drive to Google Collaboratory. After this, you can run the jupyter notebook file cell by cell as usual.
 If you are not using Google Collaboratory you should change the paths in the code to your local paths. After changing the paths there should be no problem.
 Drive Link for captcha-solver folder: https://drive.google.com/drive/folders/1ehrP9C1YjvLqWtpfh52eABiMbG37rbAg?usp=sharing
